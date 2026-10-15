@@ -1,6 +1,6 @@
 import { Page } from "playwright-core"
 
-export class LoginPageElemente {
+export class LoginPageElements {
     private page:Page
     
     constructor(page: Page){
@@ -14,7 +14,7 @@ export class LoginPageElemente {
         }
     }
 
-    get button(){
+    get buttons(){
         return {
             login: this.page.locator('#login-button')
         }
